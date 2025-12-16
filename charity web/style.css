@@ -1,1 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f4f7;
+}
+
+.container {
+  max-width: 450px;
+  margin: 100px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+  color: #2c3e50;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#connectBtn {
+  background-color: #3f51b5;
+  color: white;
+}
+
+#donateBtn {
+  background-color: #4caf50;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+#walletAddress {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+  word-break: break-all;
+}
 
