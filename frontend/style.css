@@ -1,0 +1,142 @@
+* {
+align-items: center;
+padding: 20px 40px;
+background: #2a7c8e85;
+color: white;
+}
+
+.header button {
+padding: 10px 16px;
+border: none;
+background: #ff9800;
+color: white;
+border-radius: 6px;
+cursor: pointer;
+}
+
+.wallet, .donate {
+background: white;
+margin: 30px auto;
+padding: 20px;
+width: 90%;
+max-width: 500px;
+border-radius: 8px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.wallet p {
+word-break: break-all;
+}
+
+.donate input {
+width: 100%;
+padding: 10px;
+margin: 15px 0;
+}
+
+.donate button {
+width: 100%;
+padding: 12px;
+background: #4caf50;
+border: none;
+color: white;
+border-radius: 6px;
+cursor: pointer;
+}
+
+.note {
+font-size: 12px;
+margin-top: 10px;
+color: gray;
+}
+
+footer {
+text-align: center;
+padding: 20px;
+font-size: 14px;
+color: gray;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ffffff; /* Nền trắng */
+}
+
+/* NAV BAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(90deg, #4c63d2 0%, #8b5cf6 100%); /* Gradient xanh tím */
+  color: white;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  cursor: pointer;
+}
+
+.nav-links li:hover {
+  text-decoration: underline;
+}
+
+/* CONTENT */
+main {
+  padding: 30px;
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+/* FORM */
+input, select {
+  display: block;
+  margin: 10px 0 20px;
+  padding: 8px;
+  width: 300px;
+}
+
+button {
+  padding: 10px 20px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}

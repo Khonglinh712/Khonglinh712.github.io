@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Blockchain Charity Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar">
+    <div class="logo"> CharityChain</div>
+    <ul class="nav-links">
+      <li data-page="home">Trang chủ</li>
+      <li data-page="donate">Quyên góp</li>
+      <li data-page="transparency">Minh bạch</li>
+      <li data-page="about">Giới thiệu</li>
+      <li data-page="contact">Liên hệ</li>
+    </ul>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- HOME -->
+    <section id="home" class="page active">
+      <h1>Hệ thống từ thiện ứng dụng Blockchain</h1>
+      <p>
+        Website mô phỏng quy trình quyên góp minh bạch,
+        kiểm tra KYC và điều kiện giao dịch tương tự Smart Contract.
+      </p>
+    </section>
+
+    <!-- DONATE -->
+    <section id="donate" class="page">
+      <h2> Tạo yêu cầu quyên góp (Donor)</h2>
+
+      <label>Tên người quyên góp</label>
+      <input type="text" id="donorName" />
+
+      <label>Đã hoàn thành KYC?</label>
+      <select id="donorKYC">
+        <option value="no">Chưa</option>
+        <option value="yes">Rồi</option>
+      </select>
+
+      <label>Số tiền quyên góp (ETH)</label>
+      <input type="number" id="amount" />
+
+      <button onclick="createDonation()">Tạo yêu cầu donate</button>
+      <p id="donateMsg"></p>
+    </section>
+
+    <!-- TRANSPARENCY -->
+    <section id="transparency" class="page">
+      <h2>📊 Minh bạch giao dịch</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Donor</th>
+            <th>Số tiền</th>
+            <th>Trạng thái</th>
+          </tr>
+        </thead>
+        <tbody id="donationTable"></tbody>
+      </table>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="page">
+      <h2>Giới thiệu</h2>
+      <p>
+        Dự án mô phỏng hệ thống từ thiện sử dụng Blockchain
+        nhằm tăng tính minh bạch và khả năng truy vết giao dịch.
+      </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="page">
+      <h2>Liên hệ</h2>
+      <p>Email: charitychain@demo.org</p>
+    </section>
+  </main>
+
+  <!-- Link JS -->
+  <script src="script.js"></script>
+</body>
+</html>
